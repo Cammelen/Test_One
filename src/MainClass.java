@@ -1,8 +1,11 @@
 public class MainClass {
 
-    private int class_number = 20;
+    private String class_string = "Hello, world";
 
-    public int getClassNumber() {
-        return class_number * 3;
+    public String getClassString() {
+        if (class_string.contains("Hello") || class_string.contains("hello")) {
+            return "Подстрока есть";
+        } else
+            return class_string;
     }
 }
