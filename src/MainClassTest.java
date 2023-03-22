@@ -4,9 +4,9 @@ import org.junit.Test;
 public class MainClassTest extends MainClass {
 
     @Test
-    public void testGetLocalNumber() {
-        int expected = 14;
-        int actual = this.getLocalNumber();
-        Assert.assertTrue("Возвращается число " + actual, expected == actual );
+    public void testGetClassNumber() {
+
+        int actual = getClassNumber();
+        Assert.assertTrue("Возвращается число меньше или равное 45: вернулось " + actual ,  + 45 <= actual);
     }
 }
